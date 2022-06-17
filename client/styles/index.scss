@@ -1,0 +1,139 @@
+@import '_reset';
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+
+    main {
+        .header {
+            padding-top: 1rem;
+            
+            &__logo {
+                img {
+                    width: 500px;
+                }
+            }
+    
+           &__title {
+            padding: 1rem;
+            font-size: 2rem;
+            background: #ccc;
+            margin-top: 1rem;
+           }
+        }
+
+        .content {
+            
+            .content-nav {
+                background: #000;
+                color: #fff;
+                display: flex;
+                padding: 1rem 1rem 1rem 0;
+                
+                > .content-nav__item {
+                    transition: color 0.15s ease-in;
+                    cursor: pointer;
+                    font-size: 1.3rem;
+                    padding: 0 1rem;
+                    &:not(:last-child) {
+                        border-right: 2px solid #fff;
+                    }
+
+                    &:hover, &--active {
+                        color: orange;
+                    }
+                }
+            }
+
+          &__title {
+            background: yellow;
+            padding: 1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+
+          article {
+            line-height: 1.2rem;
+            
+
+            &.page-1 {
+                padding: 2rem 1rem;
+
+                i {
+                    font-style: italic;
+                    font-size: 0.8rem;
+                    color: #ccc;
+                }
+
+                h3 {
+                    font-weight: bold;
+                }
+    
+                p {
+                    margin-top: 2rem;
+                }
+    
+                ul {
+                    list-style-type: disc;
+                    list-style-position: inside;
+                    margin-top: 2rem;
+                }
+            }
+
+            &.page-2 {
+                .chart {
+                    min-height: 500px;
+
+                    &__item {
+                        h3 {
+                            font-weight: bold;
+                            font-size: 1.2rem;
+                        }
+                    }
+    
+                    &__desc {
+                        background: #ccc;
+
+                        ul {
+                            list-style-type: disc;
+                            list-style-position: inside;
+                            padding: 1rem;
+
+                            > li {
+                                &:not(:first-child) {
+                                    margin-top: 2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            
+          }
+        }
+
+        .footer {
+            padding: 1rem;
+            background: #f5d43487;
+
+            .footer-nav {
+                &__item {
+                    &:not(:first-child) {
+                        margin-top: 0.5rem;
+                    }
+                }
+
+                a {
+                    color: #000;
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

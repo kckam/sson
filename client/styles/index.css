@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+html main .header {
+  padding-top: 1rem;
+}
+html main .header__logo img {
+  width: 500px;
+}
+html main .header__title {
+  padding: 1rem;
+  font-size: 2rem;
+  background: #ccc;
+  margin-top: 1rem;
+}
+html main .content .content-nav {
+  background: #000;
+  color: #fff;
+  display: flex;
+  padding: 1rem 1rem 1rem 0;
+}
+html main .content .content-nav > .content-nav__item {
+  transition: color 0.15s ease-in;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 0 1rem;
+}
+html main .content .content-nav > .content-nav__item:not(:last-child) {
+  border-right: 2px solid #fff;
+}
+html main .content .content-nav > .content-nav__item:hover, html main .content .content-nav > .content-nav__item--active {
+  color: orange;
+}
+html main .content__title {
+  background: yellow;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+html main .content article {
+  line-height: 1.2rem;
+}
+html main .content article.page-1 {
+  padding: 2rem 1rem;
+}
+html main .content article.page-1 i {
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+html main .content article.page-1 h3 {
+  font-weight: bold;
+}
+html main .content article.page-1 p {
+  margin-top: 2rem;
+}
+html main .content article.page-1 ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-top: 2rem;
+}
+html main .content article.page-2 .chart {
+  min-height: 500px;
+}
+html main .content article.page-2 .chart__item h3 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+html main .content article.page-2 .chart__desc {
+  background: #ccc;
+}
+html main .content article.page-2 .chart__desc ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 1rem;
+}
+html main .content article.page-2 .chart__desc ul > li:not(:first-child) {
+  margin-top: 2rem;
+}
+html main .footer {
+  padding: 1rem;
+  background: rgba(245, 212, 52, 0.5294117647);
+}
+html main .footer .footer-nav__item:not(:first-child) {
+  margin-top: 0.5rem;
+}
+html main .footer .footer-nav a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+}/*# sourceMappingURL=index.css.map */
